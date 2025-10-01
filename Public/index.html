@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>iTunes Song Search</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <h1>iTunes Song Search</h1>
+
+  <div class="playlist-container">
+    <div class="playlist-header">
+      <h2>My Playlists</h2>
+      <div class="new-playlist-form">
+        <input type="text" id="new-playlist-name" placeholder="New playlist name" />
+        <button type="button" id="create-playlist-button">Create Playlist</button>
+      </div>
+    </div>
+    <div id="playlists-list" class="playlist-list"></div>
+    <div id="current-playlist" class="playlist-songs"></div>
+  </div>
+
+  <div class="search-container">
+    <label for="song-title">Enter Song Title: </label>
+    <input type="text" id="song-title" placeholder="" />
+    <button type="button" id="search-button">Submit</button>
+  </div>
+
+  <div id="songs_div"></div>
+
+  <div id="tables-container"></div>
+
+  <script src="js/tables.js"></script>
+  <script src="js/playlistManager.js"></script>
+  <script src="js/searchManager.js"></script>
+  <script src="js/EventListener.js"></script>
+</body>
+</html>
